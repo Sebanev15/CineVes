@@ -1,0 +1,369 @@
+* {
+    font-family: "kanit";
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F4D58D;
+    height: 100%;
+}
+
+nav {
+    background-color: #001427;
+    color: #F4D58D;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #F4D58D;
+    font-size: 36px;
+    text-decoration: none;
+    padding: 33px;
+}
+
+.contenedorImagen {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+
+nav a:hover {
+    background-color: #F4D58D;
+    color: #001427;
+}
+
+.seleccionado {
+    color: #001427;
+    background-color: #F4D58D;
+}
+
+.logo {
+    height: 100px;
+    padding: 10px 20px;
+}
+
+.logo:hover {
+    content: url(../img/logoSeleccionado.png);
+}
+
+h1 {
+    text-align: center;
+    color: #001427;
+    padding-top: 100px;
+    letter-spacing: 9px;
+}
+
+.contenido {
+    display: flex;
+    width: 100%;
+    background-color: #8D0801;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+}
+
+.peliculas {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pelicula {
+    border: 4px solid #708D81;
+    width: 150px;
+    min-height: 100px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.pelicula:hover .hover {
+    opacity: 1;
+}
+
+.tituloPelicula {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.botonReserva {
+    padding: 10px 20px;
+    background-color: #8D0801;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botonReserva:hover {
+    background-color: #660500;
+}
+
+.formularioBoleto{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.formularioBoleto label{
+    color: #F4D58D;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin: 10px;
+}
+
+.formularioBoleto input, .formularioBoleto select{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 3px;
+    background-color: #F4D58D;
+    color: #001427;
+    border: none;
+}
+.formularioBoleto select option{
+    color: #F4D58D;
+    background-color: #001427;
+    border: none;
+}
+#pelicula{
+    background-color: #BF0603;
+    color: #F4D58D;
+    letter-spacing: 4px;
+    font-size: 25px;
+    font-weight:600;
+}
+#pelicula option{
+    color: #BF0603;
+    background-color: #F4D58D;
+    letter-spacing: 4px;
+    font-size: 25px;
+    font-weight:600;
+    border: none;
+}
+#imagenPelicula{
+    margin: 0px auto;
+}
+
+.botonFormulario {
+    padding: 10px 20px;
+    background-color: #BF0603;
+    color: #F4D58D;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px auto;
+    letter-spacing: 3px;
+    display: block; 
+}
+
+
+.custom-popup {
+    background-color: #001427; 
+    padding: 20px; 
+}
+.custom-title {
+    color: #F4D58D; 
+    font-family: 'Kanit', sans-serif; 
+    font-size: 24px; 
+}
+
+.custom-html {
+    color: #F4D58D; 
+    font-family: 'Kanit', sans-serif; 
+    font-size: 18px; 
+}
+
+.custom-confirm-button {
+    background-color: #223649; 
+    color: white; 
+    font-family: 'Kanit', sans-serif; 
+    font-size: 16px; 
+    padding: 10px 20px; 
+}
+
+.custom-cancel-button {
+    background-color: #BF0603; 
+    color: white; 
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px; 
+    padding: 10px 20px; 
+}
+
+
+
+.compra {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 30%;
+    border: 5px solid #223649;
+    background-color: #001427;
+    color: #F4D58D;
+    font-size: x-large;
+    letter-spacing: 2px;
+}
+
+.compra p {
+    margin: 5px 0;
+}
+
+#historialCompras{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+table {
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: center;
+}
+
+th{
+    background-color: #001427;
+    color: #F4D58D;
+    padding: 10px;
+    
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+td{
+    background-color: #F4D58D;
+    color: #223649;
+    padding: 10px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    
+}
+#burgerImagen{
+    background-color: #001427;
+    border: none;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    padding: 10px 20px;
+}
+#burgerImagen:hover{
+    background-color: #F4D58D;
+    content: url(../img/menuSeleccionado.png);
+}
+
+.mostrar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ocultar{
+    display: none;
+}
+@media (max-width:1200px){
+    .mostrar{
+        display: none;
+    }
+    #burgerImagen{
+        display: inline-block;
+    }
+    .contenedorImagen{
+        display: none;
+    }
+    .compra{
+        width: 45%;
+    }
+
+    .ocultar{
+        padding-top: 120px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 50%;
+    }
+    .pelicula{
+        width: 30%;
+    }
+    .textoEncabezado{
+        width: 100%;
+    }
+    nav a{
+        display: block;
+    }
+}
+@media (max-width:900px){
+    .compra{
+        width: 50%;
+    }
+}
+@media (max-width:600px){
+    .pelicula{
+        width: 70%;
+    }
+    #burgerImagen{
+        width: 50px;
+        height: 50px;
+    }
+    .ocultar{
+        padding-top: 70px;
+    }
+    nav a{
+        font-size: 25px;
+    }
+    .compra{
+        width: 60%;
+    }
+}
+
+@media (max-width:400px){
+    .pelicula{
+        width: 90%;
+    }
+    .ocultar{
+        width: 100%;
+    }
+    .compra{
+        width: 90%;
+    }
+    h1{
+        font-size: 25px;
+    }
+}
